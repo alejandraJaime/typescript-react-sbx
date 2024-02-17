@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "date": "2024/02/17",
+    "mood": "happy",
+    "title": "My first entry",
+    "body": "Today i started a ts API"
+  },
+  {
+    "id": 2,
+    "date": "2024/02/20",
+    "mood": "tired",
+    "title": "My second entry",
+    "body": "Today i only submitted something to fill the space"
+  },
+  {
+    "id": 3,
+    "date": "2024/02/20",
+    "mood": "hungry",
+    "title": "My last entry",
+    "body": "Today i finished a ts API"
+  }
+]
