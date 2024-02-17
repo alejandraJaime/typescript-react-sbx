@@ -1,0 +1,119 @@
+@import "./variables";
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+// MIXINS
+@mixin flexDisplay($flow, $wrap, $justify, $alignment) {
+  display: flex;
+  flex-flow: $flow $wrap;
+  justify-content: $justify;
+  align-items: $alignment;
+}
+
+@mixin font-edit($font-type, $size, $color, $weight) {
+  font-family: $font-type;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+body {
+  background-color: $body-background;
+}
+
+.main {
+  margin: 20px 30px;
+  .titles-container {
+    @include flexDisplay(row, nowrap, center, center);
+    border: 2px solid #fff;
+
+    .title-image {
+      img {
+        width: 300px;
+      }
+    }
+    .title-interface {
+      @include flexDisplay(column, nowrap, center, center);
+      .title-texts {
+        margin: 15px;
+        .main-title {
+          @include font-edit($body-font, 60px, $title-color, 1000);
+        }
+        .main-subtitle {
+          @include font-edit($body-font, 28px, $title-color, 500);
+        }
+      }
+      .header-bttn-container {
+        color: white;
+        @include flexDisplay(row, nowrap, space-around, center);
+        @include font-edit($body-font, 14px, $bttn-font-color, 1000);
+
+        .all-entries-bttn {
+          margin: 10px;
+          padding: 10px;
+          background-color: $bttn-background;
+        }
+        .one-entry-bttn {
+          margin: 10px;
+          padding: 10px;
+          background-color: $bttn-background;
+        }
+      }
+    }
+  }
+  .entries-container {
+    @include flexDisplay(row, nowrap, center, center);
+    .entry-card {
+      background-color: #fff;
+      //border-radius: 20px;
+      height: $card-min-height;
+      width: $card-min-width;
+      margin: 30px 15px;
+      @include flexDisplay(column, nowrap, flex-start, space-around);
+
+      .entry-header {
+        @include flexDisplay(row, nowrap, space-between, flex-start);
+        padding: 0px 15px;
+        img {
+          padding: 10px;
+          width: 60px;
+        }
+        .entry-texts {
+          @include font-edit($body-font, 20px, #000, 500);
+          padding: 10px;
+          .entry-mood {
+            @include font-edit(
+              $body-font,
+              $entry-mood-font-size,
+              $entry-mood-color,
+              500
+            );
+          }
+          .entry-date {
+            @include font-edit(
+              $body-font,
+              $entry-date-font-size,
+              $entry-date-color,
+              500
+            );
+          }
+          .entry-title {
+            @include font-edit(
+              $body-font,
+              $entry-title-font-size,
+              $entry-title-color,
+              1000
+            );
+          }
+        }
+      }
+      .entry-body {
+        @include font-edit($body-font, 14px, #000, 500);
+        padding: 10px 15px;
+      }
+    }
+  }
+}

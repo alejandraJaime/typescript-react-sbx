@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  background-color: #2e2e2e;
+}
+
+.main {
+  margin: 20px 30px;
+}
+.main .titles-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+.main .titles-container .title-image img {
+  width: 300px;
+}
+.main .titles-container .title-interface {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main .titles-container .title-interface .title-texts {
+  margin: 15px;
+}
+.main .titles-container .title-interface .title-texts .main-title {
+  font-family: Courier;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 1000;
+}
+.main .titles-container .title-interface .title-texts .main-subtitle {
+  font-family: Courier;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+}
+.main .titles-container .title-interface .header-bttn-container {
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Courier;
+  font-size: 14px;
+  color: #000;
+  font-weight: 1000;
+}
+.main .titles-container .title-interface .header-bttn-container .all-entries-bttn {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.main .titles-container .title-interface .header-bttn-container .one-entry-bttn {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.main .entries-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main .entries-container .entry-card {
+  background-color: #fff;
+  height: 200px;
+  width: 300px;
+  margin: 30px 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+.main .entries-container .entry-card .entry-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 15px;
+}
+.main .entries-container .entry-card .entry-header img {
+  padding: 10px;
+  width: 60px;
+}
+.main .entries-container .entry-card .entry-header .entry-texts {
+  font-family: Courier;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  padding: 10px;
+}
+.main .entries-container .entry-card .entry-header .entry-texts .entry-mood {
+  font-family: Courier;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.main .entries-container .entry-card .entry-header .entry-texts .entry-date {
+  font-family: Courier;
+  font-size: 14px;
+  color: #787878;
+  font-weight: 500;
+}
+.main .entries-container .entry-card .entry-header .entry-texts .entry-title {
+  font-family: Courier;
+  font-size: 24px;
+  color: #000;
+  font-weight: 1000;
+}
+.main .entries-container .entry-card .entry-body {
+  font-family: Courier;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  padding: 10px 15px;
+}/*# sourceMappingURL=style.css.map */
